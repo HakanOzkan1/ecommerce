@@ -24,7 +24,7 @@ const Left = styled.div`
 
 const Logo = styled.h1`
 font-weight: bold;
-  color: #6f42c1;
+  color: black;
 `;
 
 const Desc = styled.p`

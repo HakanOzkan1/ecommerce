@@ -3,10 +3,11 @@ import { useState } from "react";
 import styled from "styled-components";
 import { sliderItems } from "../data";
 import { mobile } from "../responsive";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   width: 100%;
-  height: 75vh;
+  height: 100%;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -16,7 +17,7 @@ const Container = styled.div`
 const Arrow = styled.div`
   width: 50px;
   height: 50px;
-  background-color: #6f42c1;
+  background-color: black;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -41,7 +42,7 @@ const Wrapper = styled.div`
 
 const Slide = styled.div`
   width: 100vw;
-  height: 75vh;
+  height: 59vh;
   display: flex;
   align-items: center;
   background-color: #${(props) => props.bg};
@@ -98,12 +99,14 @@ const Slider = () => {
         {sliderItems.map((item) => (
           <Slide bg={item.bg} key={item.id}>
             <ImgContainer>
-              <Image src={item.img} />
+            <Image src={item.img} />
             </ImgContainer>
             <InfoContainer>
               <Title>{item.title}</Title>
               <Desc>{item.desc}</Desc>
-              <Button>SHOW NOW</Button>
+              <Link to={`/products`} style={{ textDecoration: 'none' }}>
+                <Button>SHOW NOW</Button>
+              </Link>
             </InfoContainer>
           </Slide>
         ))}

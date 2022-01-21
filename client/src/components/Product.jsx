@@ -30,7 +30,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f5fbfd;
+  background-color: #d8d9dd;
   position: relative;
 
   &:hover ${Info}{
@@ -69,24 +69,26 @@ const Icon = styled.div`
 
 const Product = ({ item }) => {
   return (
+
     <Container>
       <Circle />
       <Image src={item.img} />
       <Info>
-      
         <Icon>
           <ShoppingCartOutlined />
         </Icon>
+        <Link to={`/product/${item._id}`} style={{ textDecoration: 'none' }}>
         <Icon>
-          <Link to={`/product/${item._id}`}>
-          <SearchOutlined />
-          </Link>
+          <SearchOutlined /> 
         </Icon>
+        </Link>
         <Icon>
           <FavoriteBorderOutlined />
         </Icon>
       </Info>
+      
     </Container>
+     
   );
 };
 

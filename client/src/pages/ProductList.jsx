@@ -53,7 +53,7 @@ const ProductList = () => {
   return (
     <Container>
       <Navbar />
-      <Title>{cat}</Title>
+      <Title>{cat.toUpperCase()}</Title>
       <FilterContainer>
         <Filter>
           <FilterText>Filter Products:</FilterText>

@@ -2,41 +2,44 @@ export const sliderItems = [
     {
       id: 1,
       img: "https://www.fashiongonerogue.com/wp-content/uploads/2014/04/iggy-azalea-revolve-clothing-photos-2014-2.jpg",
-      title: "SUMMER SALE",
-      desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+      title: "A MODEST PROPOSAL",
+      desc: "DISCOVER OUR SHOES, ICONIC BAGS, CLOTHING FAVOURITES AND MORE.",
       bg: "f5f5f5"
     },
     {
       id: 2,
       img: "https://i.ibb.co/1G5rGJ1/Excited-young-girl-in-orange-sweater-fooling-around-in-studio-jumping-with-fluttering-hair-isolated.jpg",
       title: "AUTUMN COLLECTION",
-      desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+      desc: "DISCOVER OUR SHOES, ICONIC BAGS, CLOTHING FAVOURITES AND MORE.",
       bg: "f2ab37",
     },
     {
       id: 3,
-      img: "https://i.ibb.co/cXFnLLV/3.png",
-      title: "LOUNGEWEAR LOVE",
-      desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-      bg: "fbf0f4",
+      img: "https://images.pexels.com/photos/8074534/pexels-photo-8074534.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      title: "SUMMER SALE",
+      desc: "DISCOVER OUR SHOES, ICONIC BAGS, CLOTHING FAVOURITES AND MORE.",
+      bg: "e5e4e0",
     },
   ];
 
   export const categories = [
-    {
+    { 
       id: 1,
-      img: "https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      title: "SHIRT STYLE!",
+      img: "https://images.pexels.com/photos/3682293/pexels-photo-3682293.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      title: "SHOES",
+      cat:"shoes"
     },
     {
       id: 2,
-      img: "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      title: "LOUNGEWEAR LOVE",
+      img: "https://images.pexels.com/photos/7747108/pexels-photo-7747108.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      title: "BAGS",
+      cat:"bags"
     },
     {
       id: 3,
-      img: "https://images.pexels.com/photos/5480696/pexels-photo-5480696.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      title: "LIGHT JACKETS",
+      img: "https://images.pexels.com/photos/5442465/pexels-photo-5442465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      title: "JEWELLERRY",
+      cat:"jewellery"
     },
   ];
 
