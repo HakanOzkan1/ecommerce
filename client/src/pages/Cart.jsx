@@ -10,6 +10,7 @@ import { userRequest } from "../requestMethods";
 import { useNavigate } from "react-router";
 import { useDispatch } from "react-redux";
 import { removeProduct } from "../redux/cartRedux";
+import { Button } from 'react-bootstrap';
 
 const KEY = process.env.REACT_APP_STRIPE;
 
@@ -153,7 +154,7 @@ const SummaryItemText = styled.span``;
 
 const SummaryItemPrice = styled.span``;
 
-const Button = styled.button`
+const Buttoncheck = styled.button`
   width: 100%;
   padding: 10px;
   background-color: black;
@@ -224,8 +225,9 @@ const Cart = () => {
                   </Details>
                 </ProductDetail>
                 <PriceDetail>
+                <Button variant="danger" onClick={()=>handleClick(product)}>Remove</Button>
                   <ProductAmountContainer>
-                    <Remove onClick={()=>handleClick(product)}/>
+                    <Remove/>
                     <ProductAmount>{product.quantity}</ProductAmount>
                     <Add />
                   </ProductAmountContainer>
@@ -265,7 +267,7 @@ const Cart = () => {
               token={onToken}
               stripeKey={KEY}
             >
-              <Button>CHECKOUT NOW</Button>
+              <Buttoncheck>CHECKOUT NOW</Buttoncheck>
             </StripeCheckout>
           </Summary>
         </Bottom>

@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { mobile } from "../responsive";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { Button } from 'react-bootstrap';
 
 const Container = styled.div`
   height: 60px;
@@ -95,12 +96,12 @@ const Navbar = () => {
         </Center>
         <Right>
         {currentUser ? 
-          <MenuItem onClick={handleLogout}>LOGOUT</MenuItem> 
+          <Button variant="danger" className="btn-danger" onClick={handleLogout}>LOGOUT</Button>
           :
           <><Link to="/register" style={{ textDecoration: 'none' }}>
-              <MenuItem>REGISTER</MenuItem>
+              <Button variant="dark">Register</Button>
             </Link><Link to="/login" style={{ textDecoration: 'none' }}>
-                <MenuItem>SIGN IN</MenuItem>
+                <MenuItem><Button variant="outline-dark">Sign In</Button></MenuItem>
               </Link></>
           }
           <Link to="/cart" style={{ textDecoration: 'none' }}>
