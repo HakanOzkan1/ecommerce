@@ -19,11 +19,13 @@ const Products = ({ cat, filters, sort }) => {
       try {
         const res = await axios.get(
           cat !== undefined && cat !== 'all'
-            ? process.dotenv.REACT_APP_PRODUCT_URL+`?category=${cat}`
-            : process.dotenv.REACT_APP_PRODUCT_URL
+            ? `${process.env.REACT_APP_PRODUCT}?category=${cat}`
+            : process.env.REACT_APP_PRODUCT
         );
         setProducts(res.data);
-      } catch (err) {}
+      } catch (err) {
+        console.log(err)
+      }
     };
     getProducts();
   }, [cat]);
