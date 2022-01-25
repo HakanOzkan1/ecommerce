@@ -23,8 +23,8 @@ const Left = styled.div`
 `;
 
 const Logo = styled.h1`
-font-weight: bold;
   color: black;
+  font-size:40px;
 `;
 
 const Desc = styled.p`
@@ -91,7 +91,7 @@ const Footer = () => {
   return (
     <Container>
       <Left>
-        <Logo>purePurple.</Logo>
+        <Logo>Elegant Boutique</Logo>
         <Desc>
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form, by injected
@@ -136,7 +136,7 @@ const Footer = () => {
           <Phone style={{marginRight:"10px"}}/> +1 234 56 78
         </ContactItem>
         <ContactItem>
-          <MailOutline style={{marginRight:"10px"}} /> contact@purepurple.com
+          <MailOutline style={{marginRight:"10px"}} /> contact@elegantboutique.com
         </ContactItem>
         <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
       </Right>

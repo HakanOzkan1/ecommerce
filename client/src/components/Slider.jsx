@@ -104,7 +104,7 @@ const Slider = () => {
             <InfoContainer>
               <Title>{item.title}</Title>
               <Desc>{item.desc}</Desc>
-              <Link to={`/products`} style={{ textDecoration: 'none' }}>
+              <Link to={`/products/all`} style={{ textDecoration: 'none' }}>
                 <Button>SHOW NOW</Button>
               </Link>
             </InfoContainer>
