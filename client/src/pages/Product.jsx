@@ -129,12 +129,15 @@ const Product = () => {
   const [orderId, setOrderId] = useState(1);
   const dispatch = useDispatch();
 
+
   useEffect(() => {
     const getProduct = async () => {
       try {
         const res = await publicRequest.get("/products/find/" + id);
         setProduct(res.data);
-      } catch {}
+      } catch(err) {
+        console.log(err)
+      }
     };
     getProduct();
   }, [id]);
@@ -148,7 +151,7 @@ const Product = () => {
   };
 
   const handleClick = () => {
-    setOrderId(orderId+1);
+      setOrderId(orderId+1);
     dispatch(
       addProduct({ ...product, quantity, color, size, orderId })
     );
