@@ -6,7 +6,9 @@ const Container = styled.div`
   flex: 1;
   margin: 8px;
   height: 30vh;
+  width: 100%;
   position: relative;
+  ${mobile({ width: "90%", margin:"8px auto"})}
 `;
 
 const Image = styled.img`

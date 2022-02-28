@@ -14,7 +14,9 @@ import { Button } from 'react-bootstrap';
 
 const KEY = process.env.REACT_APP_STRIPE;
 
-const Container = styled.div``;
+const Container = styled.div`
+
+`;
 
 const Wrapper = styled.div`
   padding: 20px;

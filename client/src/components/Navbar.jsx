@@ -17,13 +17,14 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  ${mobile({ padding: "10px 0px" })}
+  ${mobile({ padding: "10px 0px"  })}
 `;
 
 const Left = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
+  ${mobile({ display: "none" })}
 `;
 
 const Language = styled.span`
@@ -48,18 +49,19 @@ const Input = styled.input`
 const Center = styled.div`
   flex: 1;
   text-align: center;
+  ${mobile({   })}
 `;
 
 const Logo = styled.h1`
   color: black;
-  ${mobile({ fontSize: "24px" })}
+  ${mobile({ fontSize: "24px" , display: "flex", justifyContent: "right" })}
 `;
 const Right = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  ${mobile({ flex: 2, justifyContent: "center" })}
+  ${mobile({ flex: 2, justifyContent: "right" })}
 `;
 
 const MenuItem = styled.div`
@@ -68,7 +70,7 @@ const MenuItem = styled.div`
   margin-left: 25px;
   font-weight: bold;
   color: black;
-  ${mobile({ fontSize: "12px", marginLeft: "10px" })}
+  ${mobile({ fontSize: "10px", marginLeft: "10px" })}
 `;
 
 const Navbar = () => {
@@ -99,9 +101,10 @@ const Navbar = () => {
           :
           <><Link to="/register" style={{ textDecoration: 'none' }}>
               <Button variant="dark">Register</Button>
-            </Link><Link to="/login" style={{ textDecoration: 'none' }}>
-                <MenuItem><Button variant="outline-dark">Sign In</Button></MenuItem>
-              </Link></>
+            </Link>
+            <Link to="/login" style={{ textDecoration: 'none' }}>
+              <MenuItem><Button variant="outline-dark">Sign In</Button></MenuItem>
+            </Link></>
           }
           <Link to="/cart" style={{ textDecoration: 'none' }}>
           <MenuItem>
